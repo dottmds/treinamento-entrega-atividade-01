@@ -1,10 +1,10 @@
 import leia from 'readline-sync'
 
 var idade = leia.questionInt("INFORME A IDADE: ");
-var ehEstudante = keyInYN("VOCE E ESTUDANTE: ")
+var ehEstudante = leia.keyInYN("VOCE E ESTUDANTE: ")
 var diaSemana = leia.keyInSelect(["SEGUNDA", "TERCA", "QUARTA", "QUINTA", "SEXTA", "SABADO", "DOMINGO"], "INFORME DIA DA SEMANA")
 
-valorIngresso = 40;
+var valorIngresso = 40;
 
 if(idade < 12) {
     console.log("VALOR TOTAL: R$" + valorIngresso.toFixed(2));

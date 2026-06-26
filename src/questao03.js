@@ -3,7 +3,7 @@ import leia from 'readline-sync'
 var kwhGasto = leia.questionFloat("INFORME KWh GASTO: ");
 var temTS = leia.keyInYN("TEM TARIFA SOCIAL? ");
 
-valorPagar = 0;
+var valorPagar = 0;
 
 if(kwhGasto <= 100) {
     valorPagar = kwhGasto * 0.60;
